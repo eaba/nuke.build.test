@@ -1,9 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>$(NetCoreFramework)</TargetFramework>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="app.conf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Akka.Cluster" Version="$(AkkaVersion)" />
+		<PackageReference Include="Akka.DependencyInjection" Version="$(AkkaVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+		<PackageReference Include="Petabridge.Cmd.Cluster" Version="$(PbmVersion)" />
+		<PackageReference Include="Petabridge.Cmd.Remote" Version="$(PbmVersion)" />
+		<PackageReference Include="Akka.Bootstrap.Docker" Version="$(AkkaBootstrapDockerVersion)"/>
+	</ItemGroup>
 
 </Project>

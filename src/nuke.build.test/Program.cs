@@ -1,6 +1,29 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+﻿using System.IO;
+using System.Threading.Tasks;
+using Akka.Actor;
+using Akka.Bootstrap.Docker;
+using Akka.Configuration;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+using Petabridge.Cmd.Cluster;
+using Petabridge.Cmd.Host;
+using Petabridge.Cmd.Remote;
 
-app.MapGet("/", () => "Hello World!");
+namespace nuke.build.test
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
 
-app.Run();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+    }
+   
+}
