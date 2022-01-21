@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nuke.build.test", "src\nuke.build.test\nuke.build.test.csproj", "{F734D198-0257-4F9E-A948-0338AF53875D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{A1BABBC1-A60E-4ADA-8094-EB9236991CAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuke.Build.xunit.Tests", "src\Nuke.Build.xunit.Tests\Nuke.Build.xunit.Tests.csproj", "{F2600A34-651E-4C76-98CD-20D68D98E134}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F734D198-0257-4F9E-A948-0338AF53875D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F734D198-0257-4F9E-A948-0338AF53875D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F734D198-0257-4F9E-A948-0338AF53875D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F734D198-0257-4F9E-A948-0338AF53875D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1BABBC1-A60E-4ADA-8094-EB9236991CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1BABBC1-A60E-4ADA-8094-EB9236991CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2600A34-651E-4C76-98CD-20D68D98E134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2600A34-651E-4C76-98CD-20D68D98E134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2600A34-651E-4C76-98CD-20D68D98E134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2600A34-651E-4C76-98CD-20D68D98E134}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A88A4456-45BC-49D8-A14C-E2561598E69F}
+	EndGlobalSection
+EndGlobal
